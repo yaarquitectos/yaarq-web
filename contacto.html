@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — YAARQ Arquitectos</title>
+<meta name="description" content="Escribe a YAARQ Arquitectos SpA, estudio de arquitectura en Talca, Región del Maule.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="YAARQ Arquitectos"><span>Arquitectos</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section on-dark">
+  <div class="wrap">
+    <span class="eyebrow">Escríbenos</span>
+    <h1 style="margin-top:14px; font-size:clamp(2rem,4vw,3rem); max-width:16ch;">Conversemos sobre tu proyecto.</h1>
+
+    <div class="contact-grid" style="margin-top:56px;">
+      <form class="contact-form">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="field">
+          <label for="mensaje">Cuéntanos sobre tu proyecto</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar mensaje <span class="btn-arrow">→</span></button>
+        <p class="form-status" style="margin-top:18px; color:var(--gold-bright); font-family:var(--sans); font-size:.85rem;"></p>
+      </form>
+
+      <dl class="contact-info">
+        <dt>Correo</dt>
+        <dd><a href="mailto:contacto@yaarq.cl">contacto@yaarq.cl</a></dd>
+        <dt>Teléfono</dt>
+        <dd><a href="tel:+56712345678">+56 71 234 5678</a></dd>
+        <dt>Oficina</dt>
+        <dd>Talca, Región del Maule, Chile</dd>
+        <dt>Horario</dt>
+        <dd>Lunes a viernes, 9:00 a 18:30</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>YAARQ</h4>
+        <p>Estudio de arquitectura residencial e institucional.</p>
+        <p>Talca, Región del Maule, Chile.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Estudio</h4>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="mailto:contacto@yaarq.cl">contacto@yaarq.cl</a>
+        <a href="tel:+56712345678">+56 71 234 5678</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> YAARQ Arquitectos SpA</span>
+      <span>Todos los derechos reservados</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
