@@ -202,7 +202,6 @@ button{ font-family:inherit; cursor:pointer; }
 .hero h1 em{ color:var(--gold-bright); font-style:italic; }
 .hero p{ margin-top:24px; max-width:46ch; color:var(--paper-70); font-size:1.08rem; }
 .hero .actions{ margin-top:38px; display:flex; gap:18px; flex-wrap:wrap; }
-.hero-plate{ font-family:var(--sans); font-size:.72rem; letter-spacing:.14em; color:var(--paper-50); text-transform:uppercase; }
 @media (max-width: 900px){
   .hero-grid{ grid-template-columns:1fr; }
 }
