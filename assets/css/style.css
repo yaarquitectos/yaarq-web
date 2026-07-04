@@ -79,7 +79,7 @@ button{ font-family:inherit; cursor:pointer; }
   max-width:var(--maxw); margin:0 auto;
 }
 .brand{ display:flex; align-items:center; }
-.brand-mark{ height:28px; width:auto; }
+.brand-mark{ height:42px; width:auto; }
 .nav-links{
   display:flex; gap:36px;
   font-family:var(--sans); font-size:.78rem; letter-spacing:.12em;
