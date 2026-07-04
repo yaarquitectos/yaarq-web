@@ -8,17 +8,17 @@
 :root{
   --ink: #16140f;
   --ink-soft: #211d15;
-  --paper: #f5f0e4;
-  --paper-soft: #eee7d5;
+  --paper: #f8f7f4;
+  --paper-soft: #eeece6;
   --gold: #ad8a3e;
   --gold-deep: #7c6127;
   --gold-bright: #c9a457;
-  --line: #d8cfb8;
+  --line: #ddd9d0;
   --line-dark: #3a3527;
   --ink-70: rgba(22,20,15,.7);
   --ink-50: rgba(22,20,15,.5);
-  --paper-70: rgba(245,240,228,.7);
-  --paper-50: rgba(245,240,228,.5);
+  --paper-70: rgba(248,247,244,.7);
+  --paper-50: rgba(248,247,244,.5);
 
   --serif: 'EB Garamond', 'Garamond', 'Georgia', serif;
   --sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
@@ -185,11 +185,6 @@ button{ font-family:inherit; cursor:pointer; }
   background:var(--ink); color:var(--paper);
   padding:120px 0 90px;
   position:relative;
-  background-image:
-    linear-gradient(var(--line-dark) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line-dark) 1px, transparent 1px);
-  background-size:64px 64px;
-  background-position:center top;
 }
 .hero-grid{
   display:grid; grid-template-columns:1.1fr .9fr; gap:64px; align-items:end;
