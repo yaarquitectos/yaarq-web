@@ -35,19 +35,19 @@
       <form class="contact-form">
         <div class="field">
           <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
         </div>
         <div class="field">
           <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
         </div>
         <div class="field">
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono">
+          <label for="telefono">Teléfono <span class="optional">(opcional)</span></label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678">
         </div>
         <div class="field">
           <label for="mensaje">Cuéntanos sobre tu proyecto</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ubicación, tipo de proyecto, superficie aproximada y cualquier detalle que nos ayude a entender tu idea." required></textarea>
         </div>
         <button type="submit" class="btn">Enviar mensaje <span class="btn-arrow">→</span></button>
         <p class="form-status" style="margin-top:18px; color:var(--gold-bright); font-family:var(--sans); font-size:.85rem;"></p>
@@ -62,7 +62,13 @@
         <dd><a href="https://www.google.com/maps/search/?api=1&amp;query=30+Oriente+1546%2C+Edificio+Centro+Las+Rastras+2%2C+Talca" target="_blank" rel="noopener">30 Oriente N°1546, Of. 409<br>Edificio Centro Las Rastras 2, Talca</a></dd>
         <dt>Horario</dt>
         <dd>Lunes a viernes, 9:00 a 18:30</dd>
+        <dt>Instagram</dt>
+        <dd><a href="https://www.instagram.com/ya.arq/" target="_blank" rel="noopener">@ya.arq</a></dd>
       </dl>
+    </div>
+
+    <div class="map-frame" style="margin-top:56px;">
+      <iframe src="https://www.google.com/maps?q=30+Oriente+1546,+Edificio+Centro+Las+Rastras+2,+Talca&output=embed" title="Ubicación de la oficina de YAARQUITECTOS" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -85,6 +91,7 @@
         <h4>Contacto</h4>
         <a href="mailto:yaarquitectos@gmail.com">yaarquitectos@gmail.com</a>
         <a href="https://wa.me/56964066069" target="_blank" rel="noopener">WhatsApp +56 9 6406 6069</a>
+        <a href="https://www.instagram.com/ya.arq/" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
     <div class="footer-bottom">
