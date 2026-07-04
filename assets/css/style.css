@@ -78,16 +78,8 @@ button{ font-family:inherit; cursor:pointer; }
   padding:18px var(--gutter);
   max-width:var(--maxw); margin:0 auto;
 }
-.brand{ display:flex; align-items:center; gap:10px; }
-.brand-mark{ height:30px; width:30px; flex:none; }
-.brand span{
-  font-family:var(--sans); font-weight:700; letter-spacing:.06em;
-  font-size:.8rem; text-transform:uppercase; color:var(--ink);
-  white-space:nowrap;
-}
-@media (max-width: 480px){
-  .brand span{ font-size:.68rem; letter-spacing:.03em; }
-}
+.brand{ display:flex; align-items:center; }
+.brand-mark{ height:28px; width:auto; }
 .nav-links{
   display:flex; gap:36px;
   font-family:var(--sans); font-size:.78rem; letter-spacing:.12em;
