@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var name = form.querySelector('#nombre');
       var status = form.querySelector('.form-status');
       if (status) {
-        status.textContent = 'Gracias' + (name && name.value ? ', ' + name.value : '') + '. Escríbenos directamente a contacto@yaarq.cl con los detalles de tu proyecto y te responderemos a la brevedad.';
+        status.textContent = 'Gracias' + (name && name.value ? ', ' + name.value : '') + '. Escríbenos directamente a yaarquitectos@gmail.com con los detalles de tu proyecto y te responderemos a la brevedad.';
       }
     });
   }

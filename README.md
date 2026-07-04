@@ -1,4 +1,4 @@
-# Sitio web YAARQ Arquitectos
+# Sitio web YAARQUITECTOS
 
 Sitio estático (HTML + CSS + JS, sin frameworks ni build step), listo para publicarse en **GitHub Pages** y conectarse a tu dominio propio.
 
@@ -8,21 +8,22 @@ Sitio estático (HTML + CSS + JS, sin frameworks ni build step), listo para publ
 index.html              → Inicio
 proyectos.html           → Listado de proyectos
 proyectos/
-  casa-jp.html            → Ficha A-101
-  casa-rm.html            → Ficha A-102
-  casa-las-canas.html     → Ficha A-103
-  sede-social-villa-alegre.html → Ficha A-104
-  acceso-fundo-santa-clara.html → Ficha A-105
-  casa-armerillo.html      → Ficha A-106
-  casa-bt.html             → Ficha A-107
-  casa-levante.html        → Ficha A-108
-  casa-ab.html             → Ficha A-109
+  casa-jp.html                  → Casa JP
+  casa-rm.html                  → Casa RM
+  casa-las-canas.html           → Casa Las Cañas
+  sede-social-villa-alegre.html → Sede Social Valles de Villa Alegre
+  acceso-fundo-santa-clara.html → Acceso Fundo Santa Clara
+  casa-armerillo.html           → Casa Armerillo
+  casa-bt.html                  → Casa BT
+  casa-levante.html             → Casa Levante
+  casa-ab.html                  → Casa AB
 nosotros.html            → Sobre el estudio
 contacto.html            → Formulario de contacto
 assets/
   css/style.css          → Todos los estilos
   js/main.js             → Menú móvil, año automático, formulario
-  img/logo.png            → Tu logo YAARQ
+  js/carousel.js         → Carrusel de imágenes de cada proyecto
+  img/logo.svg           → Logo (monograma + marcas de esquina)
 CNAME                    → Dominio propio (edítalo antes de publicar)
 ```
 
@@ -35,8 +36,8 @@ CNAME                    → Dominio propio (edítalo antes de publicar)
   </div>
   ```
   Guarda las fotos en `assets/img/proyectos/` (créala) con nombres cortos y descriptivos.
-- **Textos**: nombres del equipo en `nosotros.html`, teléfono/correo en el footer y en `contacto.html`, y las memorias de cada ficha en `proyectos/*.html`.
-- **Nuevas fichas**: para agregar un proyecto nuevo, duplica cualquier archivo de `proyectos/`, cambia el contenido, y agrégalo como tarjeta en `proyectos.html` (y opcionalmente en `index.html` si quieres destacarlo).
+- **Textos**: nombres del equipo en `nosotros.html`, correo/WhatsApp/dirección en el footer y en `contacto.html`, y las memorias de cada proyecto en `proyectos/*.html`.
+- **Nuevos proyectos**: para agregar un proyecto nuevo, duplica cualquier archivo de `proyectos/`, cambia el contenido y las imágenes del carrusel, y agrégalo como tarjeta en `proyectos.html` (y opcionalmente en `index.html` si quieres destacarlo).
 
 ## 2. Publicar en GitHub Pages
 
