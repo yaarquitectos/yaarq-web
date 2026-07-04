@@ -309,6 +309,7 @@ button{ font-family:inherit; cursor:pointer; }
 @media (max-width: 820px){ .value-grid{ grid-template-columns:1fr; } }
 .value-grid h3{ font-family:var(--sans); font-size:.8rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-deep); }
 .value-grid p{ margin-top:12px; color:var(--ink-70); }
+.on-dark .value-grid p{ color:var(--paper-70); }
 
 .team-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,280px)); gap:32px; margin-top:48px; }
 .team-card .frame{ --ar:1; }
