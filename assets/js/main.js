@@ -21,9 +21,31 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       var name = form.querySelector('#nombre');
       var status = form.querySelector('.form-status');
-      if (status) {
-        status.textContent = 'Gracias' + (name && name.value ? ', ' + name.value : '') + '. Escríbenos directamente a yaarquitectos@gmail.com con los detalles de tu proyecto y te responderemos a la brevedad.';
-      }
+      var button = form.querySelector('button[type="submit"]');
+      if (button) button.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          if (status) {
+            status.textContent = 'Gracias' + (name && name.value ? ', ' + name.value : '') + '. Recibimos tu mensaje y te responderemos a la brevedad.';
+          }
+          form.reset();
+        } else {
+          if (status) {
+            status.textContent = 'No pudimos enviar tu mensaje. Escríbenos directamente a yaarquitectos@gmail.com con los detalles de tu proyecto.';
+          }
+        }
+      }).catch(function () {
+        if (status) {
+          status.textContent = 'No pudimos enviar tu mensaje. Escríbenos directamente a yaarquitectos@gmail.com con los detalles de tu proyecto.';
+        }
+      }).finally(function () {
+        if (button) button.disabled = false;
+      });
     });
   }
 });
